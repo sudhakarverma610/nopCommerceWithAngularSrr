@@ -1,4 +1,4 @@
-<!-- ![Logo](https://www.nopcommerce.com/images/github/logos.png#v1) -->
+<!-- ![Logo](https://www.nopcommerce.com/images/github/logos.PNG#v1) -->
 # NopCommerce with Angular 
 Hello I am `Sudhakar Verma` , today I am going to create a NopCommerce App With Angular using Visual stdio 2019.
 Follow following steps to create angular  app with nopCommerce 
@@ -7,25 +7,25 @@ Follow following steps to create angular  app with nopCommerce
  ### 1. Running NopCommerce App 
  1.goto nopCommerce github then clone lasted release like as follows
      Open [https://github.com/nopSolutions/nopCommerce/releases](https://github.com/nopSolutions/nopCommerce/releases).  
-    ![1.png](docs/1.png) 
+    ![1.PNG](docs/1.png) 
  2.Click on Source Code(zip) file(this will download source code of NopCommerce)
  3.Goto to Location where downloaded NopCommerce  zip file then extact nopCommerce Zip file like this 
-        ![2.png](docs/2.png) 
+        ![2.PNG](docs/2.PNG) 
   
  4.Go to inside extracted folder look like as 
-        ![3.png](docs/3.png) 
+        ![3.PNG](docs/3.PNG) 
          Then open Solution with Visual studio 2019 (by Click on NopCommerce.sln)
          Press `F5` (Run App)
          Now App is Running 
-                 ![4.png](docs/4.png) 
+                 ![4.PNG](docs/4.PNG) 
     Fill required info like above I fill then Click Install 
     Now run again now you will able to see running app like this 
-         ![5.png](docs/5.png) 
+         ![5.PNG](docs/5.PNG) 
  ### 2. Creating Angular Client App nopCommerce
    1.Goto inside  Presentation\Nop.Web like as 
-       ![6.png](docs/6.png) 
+       ![6.PNG](docs/6.PNG) 
    2.Now open Git Bash by right click on Mouse in window  
-        ![7.png](docs/7.png) 
+        ![7.PNG](docs/7.PNG) 
     This will open git bash command line interface 
 
  Run following angular command here(before this please install node and angular Cli in your System more info )
@@ -33,28 +33,28 @@ Follow following steps to create angular  app with nopCommerce
     ```node -v```
     ```npm –v```
      like as 
-    ![8.png](docs/8.png) 
+    ![8.PNG](docs/8.PNG) 
 **•	Create new project by this command**
     `
     ng new ClientApp –style=scss --routing
     `
-        ![9.png](docs/9.png) 
+        ![9.PNG](docs/9.PNG) 
 Now goto inside `ClientApp` using Cd command then run `ng serve` command like this
-        ![10.png](docs/10.png) 
+        ![10.PNG](docs/10.PNG) 
 Now Open browser open http://localhost:4200/ 
-            ![11.png](docs/11.png) 
+            ![11.PNG](docs/11.PNG) 
  ### 3.Configure Spa With NopCommerce App
  1.Open Visual studio 2019 then Open Solution Explorer
  2.Open File [RouteProvider.cs](Presentation/Nop.web/Infrastructure/RouteProvider.cs)  
- ![12.png](docs/12.png) 
+ ![12.PNG](docs/12.PNG) 
 Now  comment all code for font end releated like this 
-    ![13.png](docs/13.png)
-    ![14.png](docs/14.png)
+    ![13.PNG](docs/13.PNG)
+    ![14.PNG](docs/14.PNG)
 3.Now open [GenericUrlRouteProvider.cs](Presentation/Nop.web/Infrastructure/GenericUrlRouteProvider.cs) then comment unreleated code code look like this  
-    ![15.png](docs/15.png)
+    ![15.PNG](docs/15.PNG)
 4.Open Nop.Web->Views->_viewStart.cshtml 
  Comments All code like this    
-   ![16.png](docs/16.png)
+   ![16.PNG](docs/16.PNG)
 5.Now double on [Nop.Web](Presentation/Nop.Web/Nop.Web.csproj) then change file 
     Insert following line after `<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel> `this line 
 
@@ -70,7 +70,7 @@ Now  comment all code for font end releated like this
 
 ```
 like this 
-       ![17.png](docs/17.png)
+       ![17.PNG](docs/17.PNG)
 Insert following code 
 ```xml
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
@@ -85,7 +85,7 @@ Insert following code
  ```
   line 
 Like this 
-           ![18.png](docs/18.png)
+           ![18.PNG](docs/18.PNG)
 
 Insert following code in last but before `Project` closing tab
 ```xml
@@ -167,18 +167,18 @@ Insert following code in last but before `Project` closing tab
 ```
  
 Like  as 
-    ![19.png](docs/19.png)
+    ![19.PNG](docs/19.PNG)
 
 Now save nop.web (press Control + S)
 
 6.Now open Nop.Web->ClientApp->[angular.json](Presentation/Nop.Web/ClientApp/angular.json) 
 file like as
-     ![20.png](docs/20.png)
+     ![20.PNG](docs/20.PNG)
 Now change [projects->architect->options->outputPath to ../wwwroot/dist]()
 Like this  
-         ![21.png](docs/21.png)
+         ![21.PNG](docs/21.PNG)
 7.Now go Open Nop.web->Views->Home->[index.cshtml](Presentation/Nop.Web/Views/Home/index.cshtml)
-         ![22.png](docs/22.png)
+         ![22.PNG](docs/22.PNG)
          Replace all [index.cshtml](Presentation/Nop.Web/Views/Home/index.cshtml) code with following line 
 ```html        
 <!doctype html>
@@ -201,4 +201,4 @@ Like this
 ```
 8.Now run your project Pressing F5 
 9.now app running successfully like this 
-         ![23.png](docs/23.png)
+         ![23.PNG](docs/23.PNG)
