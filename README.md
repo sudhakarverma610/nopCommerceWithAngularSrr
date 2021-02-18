@@ -18,11 +18,11 @@ Follow following steps to create angular  app with nopCommerce
          Then open Solution with Visual studio 2019 (by Click on NopCommerce.sln)
          Press `F5` (Run App)
          Now App is Running 
-                 ![4.PNG](docs/4.PNG) 
+                ![4.PNG](docs/4.PNG) 
 
     Fill required info like above I fill then Click Install 
     Now run again now you will able to see running app like this 
-         ![5.PNG](docs/5.PNG) 
+  ![5.PNG](docs/5.PNG) 
  ### 2. Creating Angular Client App nopCommerce
    1.Goto inside  Presentation\Nop.Web like as 
        ![6.PNG](docs/6.PNG) 
@@ -49,7 +49,7 @@ Now goto inside `ClientApp` using Cd command then run `ng serve` command like th
 
 Now Open browser open http://localhost:4200/ 
 
-            ![11.PNG](docs/11.PNG) 
+  ![11.PNG](docs/11.PNG) 
 
  ### 3.Configure Spa With NopCommerce App
  1.Open Visual studio 2019 then Open Solution Explorer
